@@ -1,0 +1,46 @@
+body{
+    background-color: black;
+    color: aqua;
+    font-family: 'Anton', sans-serif;
+    justify-content: center;
+    text-align: center;
+}
+p{
+    color: aqua;
+    font-family: 'Anton', sans-serif;
+    justify-content: center;
+    text-align: center;
+}
+/*Teal Blue shiny button with hover effect*/
+.btn{
+    border: 1px solid #00fffc;
+    background-color: #000;
+    padding: 8px 20px;
+    width: 200px;
+    height: 50px;
+    color: #00fffc;
+    font-weight: 700;
+    border-radius: 100px;
+    text-transform: uppercase;
+    margin: 25px;
+    overflow: hidden;
+    position: relative;
+}
+.btn::before{
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, transparent, #00fffc, transparent);
+    transform: translateX(-100%);
+    transition: 0.6s;
+    position: absolute;
+}
+.btn:hover{
+    background: transparent;
+    box-shadow: 0 0 20px 5px #00fffc;
+}
+.btn:hover::before{
+    transform:translateX(100%);
+}
