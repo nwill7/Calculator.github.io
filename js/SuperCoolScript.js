@@ -13,7 +13,7 @@ var button_clicked = function(){
     console.log(num1, ' % ', num2, ' = ', num1 % num2);
     console.log('Minimum of ', num1, ' and ', num2, ' is ', Math.min(num1, num2));
     console.log('Maximum of ', num1, ' and ', num2, ' is ', Math.max(num1, num2));
-    console.log('Random number between ', num1, ' and ', num2, ' is ', Math.floor((Math.random() * (Math.max(num1, num2))) + (Math.min(num1, num2))));
+    console.log('Random number between ', num1, ' and ', num2, ' is ', Math.floor((Math.random() * Math.max(num1, num2)) + (Math.min(num1, num2) + 1)));
 
     document.getElementById("answer").innerHTML = ans;
 };
